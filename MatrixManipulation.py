@@ -3,6 +3,7 @@ import random
 import sys
 
 def updateMatrix(matrix):
+    # Make this global variable for all functions
     mat = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
     
     for i in range (len(matrix)):
@@ -128,11 +129,6 @@ def swipeUp(matrix):
                     # Fill vacated rows with zeros
                     matrix[k][j] = 0
                     #print_matrix(matrix)
-
-                
-              
-    # Add a new 2 or 4
-    # Compare matrices and only fill new element if there has been a change
 
     addNum(matrix);
         
